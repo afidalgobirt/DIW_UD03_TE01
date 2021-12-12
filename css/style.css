@@ -63,7 +63,7 @@ p {
 }
 
 .mainNav li {
-    display: inline;
+    display: inline-block;
 }
 
 .mainNav li a {
@@ -73,14 +73,76 @@ p {
     color: white
 }
 
-.mainNav li a:hover {
+main#indexContent li:nth-child(1), main#quienesSomosContent li:nth-child(2),
+main#productosContent li:nth-child(3), main#panaderiaContent li:nth-child(3),
+main#pasteleriaContent li:nth-child(3), main#pedidoContent li:nth-child(4),
+main#contactarContent li:nth-child(5) {
     background-color: #FAB97D;
+    font-weight: bold;
 }
 
 /* && Main section */
 .mainSection {
     display: flex;
     flex-wrap: wrap;
+}
+
+.mainSectionHeader, .mainSectionHeader img, .mainSectionHeader div {
+    width: 100%;
+}
+
+.mainSectionHeader {
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainSectionHeader img {
+    height: 45rem;
+    padding: 0px;
+}
+
+.mainSectionHeader div, .mainSectionHeader h1, .mainSectionHeader h2, .mainSectionHeader h3 {
+    position: absolute;
+}
+
+.mainSectionHeader div {
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(248, 161, 78, 0.5);
+}
+
+.mainSectionHeader h1, .mainSectionHeader h2 {
+    margin: 0px;
+    top: 40%;
+}
+
+.mainSectionHeader h2 {
+    color: white;
+}
+
+.mainSectionHeader h3 {
+    margin: 0px;
+    padding: 0.5rem 0rem;
+    bottom: 0%;
+    background-color: #F8F8F8;
+}
+
+.mainSectionHeader h3 span {
+    font-weight: bold;
+}
+
+main#indexContent .mainSectionHeader {
+    height: 45rem !important;
+}
+
+main#indexContent .mainSectionHeader div {
+    background-color: rgba(248, 161, 78, 0) !important;
+}
+
+main#indexContent .mainSectionHeader h1 {
+    top: 85% !important;
 }
 
 /* && Footer */
@@ -138,50 +200,6 @@ p {
 }
 
 /* || SECTIONS */
-
-/* && Main Section Header */
-.mainSectionHeader, .mainSectionHeader img, .mainSectionHeader div {
-    width: 100%;
-}
-
-.mainSectionHeader {
-    height: 10rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.mainSectionHeader img {
-    height: 45rem;
-    padding: 0px;
-}
-
-.mainSectionHeader div, .mainSectionHeader h1 {
-    position: absolute;
-}
-
-.mainSectionHeader div {
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(248, 161, 78, 0.5);
-}
-
-.mainSectionHeader h1 {
-    margin: 0px;
-    top: 50%;
-}
-
-main#indexContent .mainSectionHeader {
-    height: 45rem !important;
-}
-
-main#indexContent .mainSectionHeader div {
-    background-color: rgba(248, 161, 78, 0) !important;
-}
-
-main#indexContent .mainSectionHeader h1 {
-    top: 85% !important;
-}
 
 /* && Our Products Section */
 .ourProductsSection {
