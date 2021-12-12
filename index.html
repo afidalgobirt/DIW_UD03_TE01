@@ -6,31 +6,124 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <header>
-            <img src="img/logotipo.png"/>
-        </header>
-        <nav>
-            <ul>
-                <li><a>INICIO</a></li>
-                <li><a>QUI&Eacute;NES SOMOS</a></li>
-                <li><a>PRODUCTOS</a></li>
-                <li><a>REALIZAR PEDIDO</a></li>
-                <li><a>CONT&Aacute;CTANOS</a></li>
-            </ul>
-        </nav>
-        <section>
-            <article>
-                <img src="img/cabecera.jpg" class="headerImg"/>
-                <div class="headerTxt"><h1>Migas hermanas siempre pensando en ti</h1></div>
-            </article>
-            <article class="article66">
-                <h2>NUESTROS PRODUCTOS</h2>
-            </article>
-            <article class="article33">
-                <article class="orderArticle">
-                    <h2>REALIZA TU PEDIDO</h2>
+        <main id="indexContent">
+            <header class="mainHeader">
+                <img src="img/logotipo.png"/>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="">QUI&Eacute;NES SOMOS</a></li>
+                    <li><a href="">PRODUCTOS</a></li>
+                    <li><a href="">REALIZAR PEDIDO</a></li>
+                    <li><a href="">CONT&Aacute;CTANOS</a></li>
+                </ul>
+            </nav>
+            <section class="mainSection">
+                <header class="mainSectionHeader">
+                    <img src="img/cabecera.jpg" class="headerImg"/>
+                    <div></div>
+                    <h1>Migas hermanas siempre pensando en ti</h1>
+                </header>
+                <section class="ourProductsSection">
+                    <header>
+                        <h2>NUESTROS PRODUCTOS</h2>
+                    </header>
+                    <article class="productsDescription">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </article>
+                    <article class="productType">
+                        <img src="img/pan.jpg"/>
+                        <a href="" class="btnBakery">PANADER&Iacute;A</a>
+                    </article>
+                    <article class="productType">
+                        <img src="img/croissant.jpg"/>
+                        <a href="" class="btnCakeShop">PASTELER&Iacute;A</a>
+                    </article>
+                </section>
+                <aside class="orderFormSection">
+                    <form>
+                        <header>
+                            <h2>REALIZA TU PEDIDO</h2>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name"/>
+                            <label for="surnames">Apellidos</label>
+                            <input type="text" name="surnames"/>
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email"/>
+                        </header>
+                        <article class="chooseProductsList">
+                            <h3>¿Qu&eacute; productos quiere comprar?</h3>
+                            <article class="productTypeCheckList">
+                                <h4>Productos salados</h4>
+                                <label><input type="checkbox"/>Pan de trigo</label>
+                                <label><input type="checkbox"/>Pan de trigo del pa&iacute;</label>
+                                <label><input type="checkbox"/>Pan de centeno</label>
+                                <label><input type="checkbox"/>Pan integral sin sal</label>
+                                <label><input type="checkbox"/>Pan de cereales</label>
+                                <label><input type="checkbox"/>Pan de ajo</label>
+                                <label><input type="checkbox"/>Pan de nueces</label>
+                                <label><input type="checkbox"/>Pan de quinoa</label>
+                                <label><input type="checkbox"/>Pan de cebolla</label>
+                                <label><input type="checkbox"/>Pastel</label>
+                            </article>
+                            <article class="productTypeCheckList">
+                                <h4>Productos dulces</h4>
+                                <label><input type="checkbox"/>Croissant</label>
+                                <label><input type="checkbox"/>Donut</label>
+                                <label><input type="checkbox"/>Macarons</label>
+                                <label><input type="checkbox"/>Ensaimadas</label>
+                                <label><input type="checkbox"/>Napolitanas</label>
+                            </article>
+                        </article>
+                        <footer class="formFooter">
+                            <label><input type="checkbox"/>Acepto el aviso legal</label>
+                            <input type="submit" id="mainOrderBtn" value="Realizar pedido"/>
+                        </footer>
+                    </form>
+                </aside>
+            </section>
+            <footer class="mainFooter">
+                <article class="contactArticle">
+                    <h4>Contacta con nosotros</h4>
+                    <p>
+                        <a>www.migashermanas.com</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a>info@migashermanas.com</a>
+                    </p>
+                    <form id="contactForm">
+                        <article>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name"/>
+                            <label fro="surnames">Apellidos</label>
+                            <input type="text" name="surnames"/>
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email"/>
+                            <label for="textareaFooter">Comentarios</label>
+                            <textarea form="contactForm" name="textareaFooter"></textarea>
+                        </article>
+                        <footer class="formFooter">
+                            <label><input type="checkbox"/>Acepto el aviso legal</label>
+                            <input type="submit" value="Enviar"/>
+                        </footer>
+                    </form>
                 </article>
-            </article>
-        </section>
+                <article class="socialFooter">
+                    <h4>S&iacute;guenos en:</h4>
+                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png"/></a>
+                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png"/></a>
+                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png"/></a>
+                </article>
+                <article class="locationFooter">
+                    <h4>Localizaci&oacute;n</h4>
+                    <p>Av. Luis Espada, nº56 bajo, 32600 Verín, provincia de Ourense</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.798633747979!2d-7.438973784226498!3d41.94017817921742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3aea75c2c9061b%3A0x94b08593af4c7115!2sAv.%20Luis%20Espada%2C%2032600%20Ver%C3%ADn%2C%20Ourense!5e0!3m2!1ses!2ses!4v1639227787907!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </article>
+            </footer>
+        </main>
     </body>
 </html>
