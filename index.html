@@ -3,12 +3,19 @@
     <head>
         <meta charset="utf-8"/>
         <title>Migas Hermanas</title>
+        <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <main id="indexContent">
             <header class="mainHeader">
-                <img src="img/logotipo.png"/>
+                <label for="language">Idioma: 
+                    <select name="language">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </label>
+                <img src="img/logotipo.png" alt="Logo de Migas Hermanas"/>
             </header>
             <nav class="mainNav">
                 <ul>
@@ -21,7 +28,7 @@
             </nav>
             <section class="mainSection">
                 <header class="mainSectionHeader">
-                    <img src="img/cabecera.jpg" class="headerImg"/>
+                    <img src="img/cabecera.jpg" class="headerImg" alt="Imagen de productos artesanos"/>
                     <div></div>
                     <h1>Migas hermanas siempre pensando en ti</h1>
                 </header>
@@ -37,11 +44,11 @@
                         </p>
                     </article>
                     <article class="productType">
-                        <img src="img/pan.jpg"/>
+                        <img src="img/pan.jpg" alt="Productos de panaderia"/>
                         <a href="panaderia.html" class="btnBakery">PANADER&Iacute;A</a>
                     </article>
                     <article class="productType">
-                        <img src="img/croissant.jpg"/>
+                        <img src="img/croissant.jpg" alt="Productos de pasteleria"/>
                         <a href="pasteleria.html" class="btnCakeShop">PASTELER&Iacute;A</a>
                     </article>
                 </section>
@@ -49,19 +56,21 @@
                     <form>
                         <header>
                             <h2>REALIZA TU PEDIDO</h2>
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name"/>
-                            <label for="surnames">Apellidos</label>
-                            <input type="text" name="surnames"/>
-                            <label for="email">E-mail</label>
-                            <input type="text" name="email"/>
+                            <article>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name"/>
+                                <label for="surnames">Apellidos</label>
+                                <input type="text" name="surnames"/>
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email"/>
+                            </article>
                         </header>
                         <article class="chooseProductsList">
                             <h3>¿Qu&eacute; productos quiere comprar?</h3>
                             <article class="productTypeCheckList">
                                 <h4>Productos salados</h4>
                                 <label><input type="checkbox"/>Pan de trigo</label>
-                                <label><input type="checkbox"/>Pan de trigo del pa&iacute;</label>
+                                <label><input type="checkbox"/>Pan de trigo del pa&iacute;s</label>
                                 <label><input type="checkbox"/>Pan de centeno</label>
                                 <label><input type="checkbox"/>Pan integral sin sal</label>
                                 <label><input type="checkbox"/>Pan de cereales</label>
@@ -114,9 +123,9 @@
                 </article>
                 <article class="socialFooter">
                     <h4>S&iacute;guenos en:</h4>
-                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png"/></a>
-                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png"/></a>
-                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png"/></a>
+                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png" alt="Logo de Facebook"/></a>
+                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png" alt="Logo de Twitter"/></a>
+                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png" alt="Logo de Instagram"/></a>
                 </article>
                 <article class="locationFooter">
                     <h4>Localizaci&oacute;n</h4>

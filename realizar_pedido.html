@@ -8,7 +8,13 @@
     <body>
         <main id="pedidoContent">
             <header class="mainHeader">
-                <img src="img/logotipo.png"/>
+                <label for="language">Idioma: 
+                    <select name="language">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </label>
+                <img src="img/logotipo.png" alt="Logo de Migas Hermanas"/>
             </header>
             <nav class="mainNav">
                 <ul>
@@ -21,11 +27,54 @@
             </nav>
             <section class="mainSection">
                 <header class="mainSectionHeader">
-                    <img src="img/cabecera.jpg" class="headerImg"/>
+                    <img src="img/cabecera_dos.jpg" class="headerImg" alt="Imagen de productos artesanos"/>
                     <div></div>
                     <h2>PEDIDO</h2>
                     <h3>Inicio &nbsp;/&nbsp; <span>Realizar pedido</span></h3>
                 </header>
+                <section class="orderFormSection">
+                    <form>
+                        <header>
+                            <h2>REALIZA TU PEDIDO</h2>
+                            <article>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name"/>
+                                <label for="surnames">Apellidos</label>
+                                <input type="text" name="surnames"/>
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email"/>
+                            </article>
+                        </header>
+                        <article class="chooseProductsList">
+                            <h3>¿Qu&eacute; productos quiere comprar?</h3>
+                            <article class="productTypeCheckList">
+                                <h4>Productos salados</h4>
+                                <label><input type="checkbox"/>Pan de trigo</label>
+                                <label><input type="checkbox"/>Pan de trigo del pa&iacute;s</label>
+                                <label><input type="checkbox"/>Pan de centeno</label>
+                                <label><input type="checkbox"/>Pan integral sin sal</label>
+                                <label><input type="checkbox"/>Pan de cereales</label>
+                                <label><input type="checkbox"/>Pan de ajo</label>
+                                <label><input type="checkbox"/>Pan de nueces</label>
+                                <label><input type="checkbox"/>Pan de quinoa</label>
+                                <label><input type="checkbox"/>Pan de cebolla</label>
+                                <label><input type="checkbox"/>Pastel</label>
+                            </article>
+                            <article class="productTypeCheckList">
+                                <h4>Productos dulces</h4>
+                                <label><input type="checkbox"/>Croissant</label>
+                                <label><input type="checkbox"/>Donut</label>
+                                <label><input type="checkbox"/>Macarons</label>
+                                <label><input type="checkbox"/>Ensaimadas</label>
+                                <label><input type="checkbox"/>Napolitanas</label>
+                            </article>
+                        </article>
+                        <footer class="formFooter">
+                            <label><input type="checkbox"/>Acepto el aviso legal</label>
+                            <input type="submit" id="mainOrderBtn" value="Realizar pedido"/>
+                        </footer>
+                    </form>
+                </section>
             </section>
             <footer class="mainFooter">
                 <article class="contactArticle">
@@ -54,9 +103,9 @@
                 </article>
                 <article class="socialFooter">
                     <h4>S&iacute;guenos en:</h4>
-                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png"/></a>
-                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png"/></a>
-                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png"/></a>
+                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png" alt="Logo de Facebook"/></a>
+                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png" alt="Logo de Twitter"/></a>
+                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png" alt="Logo de Instagram"/></a>
                 </article>
                 <article class="locationFooter">
                     <h4>Localizaci&oacute;n</h4>
